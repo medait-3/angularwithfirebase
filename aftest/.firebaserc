@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ramadan-map-316e0": {
+      "hosting": {
+        "aftest": [
+          "ramadan-map-316e0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<form class="uk-padding">
+    <fieldset class="uk-fieldset">
+
+
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="name" name="a" [(ngModel)]='data.a'>
+        </div>
+            <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="phone"  name="b" [(ngModel)]='data.b'>
+        </div>
+    <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="country"  name="c" [(ngModel)]='data.c'>
+        </div>
+    <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="skill"  name="d" [(ngModel)]='data.d'>
+        </div>
+          <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="price" name="e" [(ngModel)]='data.e'>
+        </div>
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="3" placeholder="note" name="f" [(ngModel)]='data.f'></textarea>
+        </div>
+
+
+    </fieldset>
+    
+        <button class="uk-button uk-button-secondary" (click)="insertSkill()">sub</button>
+</form>

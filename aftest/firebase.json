@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "aftest",
+      "public": "dist/aftest",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

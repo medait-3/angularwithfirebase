@@ -1,0 +1,34 @@
+<nav class="uk-navbar-container " uk-navbar="mode: click">
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="home">7irfa</a></li>
+            <li *ngIf="!isLoggedIn"> <a href="login">singin</a></li>
+             <li class="uk-active" *ngIf="!isLoggedIn"><a href="register">register</a></li>
+             <li><a href="skill">skills</a></li>
+              <li><a href="myskill">my skills</a></li>
+                    
+             
+            
+        </ul>
+
+    </div>
+
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+           
+            <li *ngIf="isLoggedIn">
+                <a href="#">profil</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a  routerLink="/addskills" routerLinkActive="active">add</a></li>
+                        <li><a href="#">out</a></li>
+                    </ul>
+                </div>
+            </li>
+         
+        </ul>
+
+    </div>
+</nav>
